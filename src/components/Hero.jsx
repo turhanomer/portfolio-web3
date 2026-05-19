@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import profileImage from '../images/aa.jpg';
 
 const Typewriter = ({ text, delay = 0 }) => {
   const [displayText, setDisplayText] = useState('');
@@ -111,14 +112,10 @@ const Hero = () => {
               position: 'relative',
               zIndex: 2
             }}>
-              <img 
-                src="/src/images/aa.jpg" 
-                alt="Ömer Turhan" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.1) brightness(0.9)' }} 
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.parentElement.innerHTML = '<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-family: var(--font-mono); text-align: center; padding: 20px;">/src/images/aa.jpg<br/><br/>Resim Bulunamadı</div>';
-                }}
+              <img
+                src={profileImage}
+                alt="Ömer Turhan"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.1) brightness(0.9)' }}
               />
             </div>
             {/* Tech Decoration Elements */}
