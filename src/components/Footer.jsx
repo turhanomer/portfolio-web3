@@ -111,7 +111,7 @@ const Footer = () => {
               <Linkedin size={18} /> LinkedIn
             </a>
             <a
-              href="https://github.com/turhanomer"
+              href="https://github.com/turhanomer/portfolio-web3"
               target="_blank"
               rel="noopener noreferrer"
               className="btn glass-panel"
